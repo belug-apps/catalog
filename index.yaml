@@ -2,6 +2,30 @@ apiVersion: v1
 entries:
   cert-manager-issuers:
   - apiVersion: v2
+    appVersion: 1.11.0
+    created: "2023-02-11T10:38:49.411567563Z"
+    description: Helper for `cert-manager` to manage Issuers and ClusterIssuers via
+      Helm
+    digest: d7ec306fe34430a3d1cef829ccbb7d16f54d8c86e95bf6b0d6fdbc8b1a1922dd
+    home: https://github.com/cert-manager/cert-manager
+    icon: https://raw.githubusercontent.com/cert-manager/cert-manager/master/logo/logo-small.png
+    keywords:
+    - cert-manager
+    - tls
+    - helper
+    kubeVersion: '>= 1.20.0-0'
+    maintainers:
+    - name: belug-apps
+      url: https://github.com/belug-apps
+    name: cert-manager-issuers
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    - https://github.com/belug-apps/catalog/tree/main/charts/cert-manager-issuers
+    type: application
+    urls:
+    - https://github.com/belug-apps/catalog/releases/download/cert-manager-issuers-1.0.1/cert-manager-issuers-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
     created: "2023-01-29T19:52:01.601234321Z"
     description: Helper for `cert-manager` to manage Issuers and ClusterIssuers via
       Helm
@@ -45,4 +69,31 @@ entries:
     urls:
     - https://github.com/belug-apps/catalog/releases/download/cert-manager-issuers-0.0.1/cert-manager-issuers-0.0.1.tgz
     version: 0.0.1
-generated: "2023-01-29T19:52:01.601245421Z"
+  helm-dashboard:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-02-11T10:38:49.601387119Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.2.2
+    description: A GUI Dashboard for Helm by Komodor
+    digest: 5d329d4a390f79f6741ae18890aea31c143d989ce1ac88178795cfccfa832080
+    home: https://github.com/komodorio/helm-dashboard
+    icon: https://raw.githubusercontent.com/komodorio/helm-dashboard/main/pkg/dashboard/static/logo.svg
+    keywords:
+    - dashboard
+    - helm
+    kubeVersion: '>=1.20'
+    maintainers:
+    - name: xunleii
+      url: https://github.com/belug-apps
+    name: helm-dashboard
+    sources:
+    - https://github.com/komodorio/helm-dashboard
+    - https://github.com/belug-apps/catalog/tree/main/charts/helm-dashboard
+    type: application
+    urls:
+    - https://github.com/belug-apps/catalog/releases/download/helm-dashboard-1.0.0/helm-dashboard-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-02-11T10:38:49.601402719Z"
