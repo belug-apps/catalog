@@ -96,6 +96,32 @@ entries:
   helm-dashboard:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2023-02-12T19:11:00.023709399Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.2.2
+    description: A GUI Dashboard for Helm by Komodor
+    digest: 93e729cdc518376023f994beb19a44ba333bd9fe70f869efea08f69e13aa5dfa
+    home: https://github.com/komodorio/helm-dashboard
+    icon: https://raw.githubusercontent.com/komodorio/helm-dashboard/main/pkg/dashboard/static/logo.svg
+    keywords:
+    - dashboard
+    - helm
+    kubeVersion: '>=1.20'
+    maintainers:
+    - name: xunleii
+      url: https://github.com/belug-apps
+    name: helm-dashboard
+    sources:
+    - https://github.com/komodorio/helm-dashboard
+    - https://github.com/belug-apps/catalog/tree/main/charts/helm-dashboard
+    type: application
+    urls:
+    - https://github.com/belug-apps/catalog/releases/download/helm-dashboard-1.1.1/helm-dashboard-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2023-02-12T09:20:42.184350978Z"
     dependencies:
     - name: common
@@ -172,4 +198,4 @@ entries:
     urls:
     - https://github.com/belug-apps/catalog/releases/download/helm-dashboard-1.0.0/helm-dashboard-1.0.0.tgz
     version: 1.0.0
-generated: "2023-02-12T09:20:42.184369279Z"
+generated: "2023-02-12T19:11:00.0237309Z"
