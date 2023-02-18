@@ -274,4 +274,33 @@ entries:
     urls:
     - https://github.com/belug-apps/catalog/releases/download/helm-dashboard-1.0.0/helm-dashboard-1.0.0.tgz
     version: 1.0.0
-generated: "2023-02-15T14:48:33.040913782Z"
+  jellyfin:
+  - apiVersion: v2
+    appVersion: 10.8.9
+    created: "2023-02-18T23:01:10.074320199Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.2.2
+    description: Jellyfin is the volunteer-built media solution that puts you in control
+      of your media.
+    digest: 73c122bd54c36910594f2171bbb319388e2af877d90cac22d2f366ede8929f6e
+    home: https://jellyfin.org/
+    icon: https://raw.githubusercontent.com/komodorio/helm-dashboard/main/pkg/dashboard/static/logo.svg
+    keywords:
+    - jellyfin
+    - media-server
+    - plex
+    kubeVersion: '>=1.20'
+    maintainers:
+    - name: xunleii
+      url: https://github.com/belug-apps
+    name: jellyfin
+    sources:
+    - https://github.com/jellyfin/jellyfin
+    - https://github.com/belug-apps/catalog/tree/main/charts/jellyfin
+    type: application
+    urls:
+    - https://github.com/belug-apps/catalog/releases/download/jellyfin-1.0.0/jellyfin-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-02-18T23:01:10.0744492Z"
