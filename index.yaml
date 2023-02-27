@@ -3,6 +3,34 @@ entries:
   actual:
   - apiVersion: v2
     appVersion: v23.2.9
+    created: "2023-02-27T19:42:02.234839373Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.2.2
+    description: Enjoy managing your finances
+    digest: 53b529c3341b3c2c0ab39cfa24924bd3d8c0818ee9f3cbb19093ae22faee10fa
+    home: https://actualbudget.com/
+    icon: https://github.com/actualbudget/docs/raw/master/static/img/favicon.png
+    keywords:
+    - actualserver
+    - finance
+    - ynab
+    kubeVersion: '>=1.20'
+    maintainers:
+    - name: xunleii
+      url: https://github.com/belug-apps
+    name: actual
+    sources:
+    - https://github.com/actualbudget/actual
+    - https://github.com/actualbudget/actual-server
+    - https://github.com/belug-apps/catalog/tree/main/charts/actual
+    type: application
+    urls:
+    - https://github.com/belug-apps/catalog/releases/download/actual-1.1.0/actual-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: v23.2.9
     created: "2023-02-21T20:28:28.411771318Z"
     dependencies:
     - name: common
@@ -30,6 +58,34 @@ entries:
     - https://github.com/belug-apps/catalog/releases/download/actual-1.0.0/actual-1.0.0.tgz
     version: 1.0.0
   cert-manager-issuers:
+  - apiVersion: v2
+    appVersion: 1.11.0
+    created: "2023-02-27T19:42:02.494916748Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.2.2
+    description: Helper for `cert-manager` to manage Issuers and ClusterIssuers via
+      Helm
+    digest: ef7af5cda7a5ceffbf5cbf0d31826912181e88615545b37dcb5add093a8742a5
+    home: https://github.com/cert-manager/cert-manager
+    icon: https://raw.githubusercontent.com/cert-manager/cert-manager/master/logo/logo-small.png
+    keywords:
+    - cert-manager
+    - tls
+    - helper
+    kubeVersion: '>= 1.20.0-0'
+    maintainers:
+    - name: belug-apps
+      url: https://github.com/belug-apps
+    name: cert-manager-issuers
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    - https://github.com/belug-apps/catalog/tree/main/charts/cert-manager-issuers
+    type: application
+    urls:
+    - https://github.com/belug-apps/catalog/releases/download/cert-manager-issuers-2.0.0/cert-manager-issuers-2.0.0.tgz
+    version: 2.0.0
   - apiVersion: v2
     appVersion: 1.11.0
     created: "2023-02-12T22:29:38.639059397Z"
@@ -147,6 +203,32 @@ entries:
     - https://github.com/belug-apps/catalog/releases/download/cert-manager-issuers-0.0.1/cert-manager-issuers-0.0.1.tgz
     version: 0.0.1
   helm-dashboard:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-02-27T19:42:02.730271731Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.2.2
+    description: A GUI Dashboard for Helm by Komodor
+    digest: d9d335e402200dccfc579ab70a087f22e9d124ef8c6a0cfa1a4de2df881ddfb8
+    home: https://github.com/komodorio/helm-dashboard
+    icon: https://raw.githubusercontent.com/komodorio/helm-dashboard/main/pkg/dashboard/static/logo.svg
+    keywords:
+    - dashboard
+    - helm
+    kubeVersion: '>=1.20'
+    maintainers:
+    - name: xunleii
+      url: https://github.com/belug-apps
+    name: helm-dashboard
+    sources:
+    - https://github.com/komodorio/helm-dashboard
+    - https://github.com/belug-apps/catalog/tree/main/charts/helm-dashboard
+    type: application
+    urls:
+    - https://github.com/belug-apps/catalog/releases/download/helm-dashboard-2.0.0/helm-dashboard-2.0.0.tgz
+    version: 2.0.0
   - apiVersion: v2
     appVersion: 1.0.0
     created: "2023-02-15T14:48:33.040862582Z"
@@ -306,6 +388,33 @@ entries:
   jellyfin:
   - apiVersion: v2
     appVersion: 10.8.9
+    created: "2023-02-27T19:42:02.966472718Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.2.2
+    description: Your media, your server, your way
+    digest: 58b4c5a6590171113b57aa01d45bdc7defd6d316c63dc2f57b68db45ca09957f
+    home: https://jellyfin.org/
+    icon: https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-transparent.svg
+    keywords:
+    - jellyfin
+    - media-server
+    - plex
+    kubeVersion: '>=1.20'
+    maintainers:
+    - name: xunleii
+      url: https://github.com/belug-apps
+    name: jellyfin
+    sources:
+    - https://github.com/jellyfin/jellyfin
+    - https://github.com/belug-apps/catalog/tree/main/charts/jellyfin
+    type: application
+    urls:
+    - https://github.com/belug-apps/catalog/releases/download/jellyfin-1.2.0/jellyfin-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v2
+    appVersion: 10.8.9
     created: "2023-02-19T18:32:44.140332304Z"
     dependencies:
     - name: common
@@ -415,4 +524,4 @@ entries:
     urls:
     - https://github.com/belug-apps/catalog/releases/download/jellyfin-1.0.0/jellyfin-1.0.0.tgz
     version: 1.0.0
-generated: "2023-02-21T20:28:28.411804819Z"
+generated: "2023-02-27T19:42:02.966552018Z"
