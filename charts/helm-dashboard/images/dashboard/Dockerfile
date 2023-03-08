@@ -18,7 +18,7 @@ FROM docker.io/aquasec/trivy:0.38.0 as trivy_packager
 FROM docker.io/alpine:3.17.2
 
 # renovate: datasource=docker depName=komodorio/helm-dashboard versioning=semver
-ARG HELM_DASHBOARD_VERSION=1.0.0
+ARG HELM_DASHBOARD_VERSION=1.2.0
 
 RUN apk upgrade --no-cache
 COPY --from=builder /build/dashboard /bin/helm-dashboard
