@@ -6,5 +6,5 @@ jq 1.6
 just 1.13.0
 kind 0.17.0
 kubectl 1.26.1
-trivy 0.38.0
+trivy 0.38.2
 yq 4.30.8
