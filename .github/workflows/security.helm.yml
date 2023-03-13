@@ -66,7 +66,7 @@ jobs:
           severity: UNKNOWN,MEDIUM,HIGH,CRITICAL # NOTE: avoid reporting LOW issues
           skip-dirs: charts # we can't do anything to fix dependencies, so we skip them
           trivyignores: ${{ matrix.chart }}/.trivyignore
-      - uses: github/codeql-action/upload-sarif@e00cd12e3ee0ce24d476645336a315351be51d88 # tag=codeql-bundle-20221211
+      - uses: github/codeql-action/upload-sarif@19f00dc212364caec77c5ea88fa53cb5deebc752 # tag=codeql-bundle-20221211
         if: always()
         with:
           category: trivy-helm-syntax
